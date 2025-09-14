@@ -1,0 +1,18 @@
+{
+  "name": "@valaxyjs/typedoc",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "prebuild": "pnpm run typedoc",
+    "build": "vitepress build",
+    "dev": "vitepress dev",
+    "preview": "vitepress preview",
+    "typedoc": "typedoc --options ./typedoc.json"
+  },
+  "devDependencies": {
+    "typedoc": "^0.28.12",
+    "typedoc-plugin-markdown": "^4.8.1",
+    "typedoc-vitepress-theme": "^1.1.2",
+    "vitepress": "catalog:frontend"
+  }
+}
