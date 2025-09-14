@@ -1,0 +1,23 @@
+{
+  "name": "valaxy-addon-algolia",
+  "version": "0.2.0",
+  "description": "Algolia Search Box for Valaxy",
+  "repository": {
+    "url": "https://github.com/YunYouJun/valaxy/tree/main/packages/valaxy-addon-algolia"
+  },
+  "keywords": [
+    "valaxy",
+    "addon",
+    "algolia"
+  ],
+  "main": "index.ts",
+  "types": "index.d.ts",
+  "peerDependencies": {
+    "valaxy": ">=0.22"
+  },
+  "dependencies": {
+    "@docsearch/css": "^3.9.0",
+    "@docsearch/js": "^3.9.0",
+    "valaxy": "workspace:*"
+  }
+}

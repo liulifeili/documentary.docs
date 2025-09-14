@@ -1,0 +1,42 @@
+{
+  "name": "valaxy-theme-yun",
+  "type": "module",
+  "version": "0.26.6",
+  "author": {
+    "email": "me@yunyoujun.cn",
+    "name": "YunYouJun",
+    "url": "https://www.yunyoujun.cn"
+  },
+  "license": "MIT",
+  "homepage": "https://yun.valaxy.site",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YunYouJun/valaxy/tree/main/packages/valaxy-theme-yun.git"
+  },
+  "exports": {
+    "./client": "./client/index.ts",
+    "./theme": "./types/index.d.ts",
+    "./*": "./*",
+    ".": "./index.ts"
+  },
+  "main": "index.ts",
+  "module": "index.ts",
+  "scripts": {
+    "release": "bumpp && pnpm publish"
+  },
+  "dependencies": {
+    "@ctrl/tinycolor": "^4.1.0",
+    "@explosions/fireworks": "^0.2.0",
+    "@iconify-json/ant-design": "catalog:build",
+    "@iconify-json/simple-icons": "catalog:build",
+    "@vueuse/motion": "^3.0.3",
+    "animejs": "^4.1.3",
+    "gsap": "^3.13.0",
+    "primevue": "catalog:frontend"
+  },
+  "devDependencies": {
+    "@types/animejs": "^3.1.13",
+    "valaxy": "workspace:*",
+    "valaxy-addon-waline": "workspace:*"
+  }
+}

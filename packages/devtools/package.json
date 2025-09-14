@@ -1,0 +1,64 @@
+{
+  "name": "@valaxyjs/devtools",
+  "type": "module",
+  "version": "0.26.6",
+  "repository": {
+    "url": "https://github.com/YunYouJun/valaxy"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.mjs"
+    },
+    "./rpc": "./rpc.d.ts",
+    "./client": "./dist/client",
+    "./*": "./*"
+  },
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "rpc.d.ts"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "rimraf dist && run-s build:*",
+    "build:client": "vite build src/client",
+    "build:node": "unbuild",
+    "dev": "npm run stub && npm run dev:client",
+    "dev:client": "vite dev src/client --port 5001",
+    "watch:client": "vite build src/client --watch",
+    "stub": "unbuild --stub",
+    "prepublishOnly": "npm run build",
+    "release": "bumpp && pnpm publish"
+  },
+  "dependencies": {
+    "@rollup/pluginutils": "^5.3.0",
+    "axios": "^1.11.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "http-proxy-middleware": "^3.0.5",
+    "js-yaml": "^4.1.0",
+    "pathe": "^2.0.3",
+    "sirv": "^3.0.2",
+    "vite-dev-rpc": "^1.1.0"
+  },
+  "devDependencies": {
+    "@advjs/gui": "0.0.7-beta.7",
+    "@iconify-json/ri": "catalog:build",
+    "@intlify/unplugin-vue-i18n": "catalog:build",
+    "@primevue/themes": "catalog:frontend",
+    "@types/body-parser": "^1.19.6",
+    "@types/splitpanes": "^2.2.6",
+    "@types/wicg-file-system-access": "^2023.10.6",
+    "gray-matter": "^4.0.3",
+    "primevue": "catalog:frontend",
+    "splitpanes": "^4.0.4",
+    "typescript": "catalog:build",
+    "unbuild": "catalog:build",
+    "unplugin-vue-router": "catalog:build",
+    "vite": "catalog:build",
+    "vue-i18n": "catalog:build"
+  }
+}

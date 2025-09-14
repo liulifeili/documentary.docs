@@ -1,0 +1,13 @@
+button:
+  about: About
+  back: Back
+  go: GO
+  home: Home
+  toggle_dark: Toggle dark mode
+  toggle_langs: Change languages
+  save_frontmatter: Save Frontmatter
+
+pageData:
+  path: Path
+  filePath: File Path
+  routePath: Route Path

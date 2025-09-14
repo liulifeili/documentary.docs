@@ -1,0 +1,31 @@
+{
+  "name": "valaxy-theme-press",
+  "version": "0.26.6",
+  "description": "Docs Theme for Valaxy",
+  "author": {
+    "email": "me@yunyoujun.cn",
+    "name": "YunYouJun",
+    "url": "https://www.yunyoujun.cn"
+  },
+  "maintainers": [
+    "YunYouJun"
+  ],
+  "homepage": "https://press.valaxy.site",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YunYouJun/valaxy/tree/main/packages/valaxy-theme-press"
+  },
+  "exports": {
+    ".": "./index.ts",
+    "./*": "./*"
+  },
+  "main": "node/index.ts",
+  "types": "types/index.d.ts",
+  "dependencies": {
+    "@docsearch/css": "^3.9.0",
+    "@docsearch/js": "^3.9.0"
+  },
+  "devDependencies": {
+    "valaxy": "workspace:*"
+  }
+}
