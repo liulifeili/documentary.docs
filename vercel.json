@@ -1,3 +1,4 @@
 {
+  "outputDirectory": "api/.vitepress/dist",
   "cleanUrls": true
 }
