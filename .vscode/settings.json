@@ -1,0 +1,67 @@
+{
+  // Enable the ESlint flat config support
+  "eslint.experimental.useFlatConfig": true,
+  // Disable the default formatter, use eslint instead
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+  // Auto fix
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "never"
+  },
+  // Enable eslint for all supported languages
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml"
+  ],
+
+  "stylelint.validate": ["css", "scss", "vue"],
+  "[scss]": {
+    "editor.formatOnSave": true
+    // "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+
+  "cSpell.words": [
+    "AGUI",
+    "algoliasearch",
+    "axios",
+    "beian",
+    "codepen",
+    "defu",
+    "instantsearch",
+    "jiti",
+    "lightgallery",
+    "nimbo",
+    "primevue",
+    "shiki",
+    "strato",
+    "twikoo",
+    "unconfig",
+    "unhead",
+    "vala",
+    "valaxy",
+    "valaxyjs"
+  ],
+  "i18n-ally.sourceLanguage": "en",
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.localesPaths": [
+    "packages/valaxy/client/locales",
+    "packages/valaxy-theme-yun/locales",
+    "demo/yun/locales"
+  ],
+  "i18n-ally.sortKeys": true,
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "svg.preview.background": "editor",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "unocss.root": "."
+}
