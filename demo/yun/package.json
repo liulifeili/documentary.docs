@@ -1,0 +1,44 @@
+{
+  "name": "yun-demo",
+  "valaxy": {
+    "theme": "yun"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "npm run build:ssg",
+    "build:spa": "valaxy build",
+    "build:ssg": "valaxy build --ssg --log=info",
+    "dev": "valaxy . --port 4860",
+    "vite:dev": "npx vite-node -w scripts/vite-node.ts",
+    "valaxy:dev": "valaxy .",
+    "fuse": "valaxy fuse",
+    "preview-https": "serve dist",
+    "new": "valaxy new",
+    "new:f": "valaxy new -f",
+    "rss": "valaxy rss",
+    "serve": "vite preview"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "../../packages/valaxy/dist/*.js",
+      "../../packages/devtools/dist/*"
+    ]
+  },
+  "dependencies": {
+    "valaxy": "workspace:*",
+    "valaxy-addon-abbrlink": "workspace:*",
+    "valaxy-addon-algolia": "workspace:*",
+    "valaxy-addon-artalk": "^0.1.2",
+    "valaxy-addon-bangumi": "workspace:*",
+    "valaxy-addon-components": "workspace:*",
+    "valaxy-addon-lightgallery": "workspace:*",
+    "valaxy-addon-meting": "workspace:*",
+    "valaxy-addon-twikoo": "workspace:*",
+    "valaxy-addon-waline": "workspace:*",
+    "valaxy-theme-yun": "workspace:*"
+  },
+  "devDependencies": {
+    "@iconify-json/carbon": "catalog:build",
+    "nodemon": "^3.1.10"
+  }
+}

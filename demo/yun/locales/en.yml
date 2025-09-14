@@ -1,0 +1,23 @@
+docs:
+  view_docs: See Docs
+
+excerpt:
+  ai: AI-Generated Excerpt
+
+siteConfig:
+  title: Custom Blog Name
+  subtitle: Next Generation Static Blog Framework.
+  description: Valaxy Theme Yun Preview
+  author:
+    name: YunYouJun
+  social:
+    bilibili: Bilibili
+  sponsor:
+    alipay: Alipay
+    wechatpay: WeChat Pay
+
+tag:
+  notes: Notes
+
+category:
+  test: Test
